@@ -1,0 +1,1 @@
+Macro can't define the var type, but inline can.
