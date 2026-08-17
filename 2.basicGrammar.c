@@ -20,6 +20,7 @@ int main(){// int main(int argc, char *argv[])
     // func using
     sum = add(num1,num2);
     printf("Sum %d\n",sum);
+    printf("Pi is %1.2f\n",PI);
     printf("Pi is %2f",PI);
 
     return 0;
