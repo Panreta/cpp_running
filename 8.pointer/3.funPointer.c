@@ -4,6 +4,9 @@ int max(int x, int y)
 {
     return x > y ? x : y;
 }
+/*
+if x > y, return x, else return y
+*/
  
 int main(void)
 {
@@ -12,7 +15,7 @@ int main(void)
     int a, b, c, d;
  
     printf("请输入三个数字:");
-    scanf("%d %d %d", & a, & b, & c);# %d: how to read the input
+    scanf("%d %d %d", & a, & b, & c);// %d: how to read the input
  
     /* 与直接调用函数等价，d = max(max(a, b), c) */
     d = p(p(a, b), c); 

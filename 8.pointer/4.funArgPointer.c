@@ -1,6 +1,9 @@
+//A callback function is a function you implement that gets called by someone else's function during its execution.
+
 #include <stdlib.h>  
 #include <stdio.h>
  
+// print 10 random int
 void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))
 {
     for (size_t i=0; i<arraySize; i++)

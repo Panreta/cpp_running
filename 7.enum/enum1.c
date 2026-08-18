@@ -6,6 +6,6 @@ enum DAY {
 
 int main() {
     enum DAY today = SUN;
-    printf("Day number: %d\n", today);  // prints 3
+    printf("Day number: %d\n", today);  // prints FRI + 2
     return 0;
 }

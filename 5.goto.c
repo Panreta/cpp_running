@@ -1,23 +1,21 @@
 #include <stdio.h>
  
-int main ()
-{
-   /* 局部变量定义 */
-   int a = 10;
- 
-   /* do 循环执行 */
-   do
-   {
-      if( a == 15)
-      {
-         /* 跳过迭代 */
-         a = a + 1;
-         continue;
-      }
-      printf("the value of a is: %d\n", a);
-      a++;
-     
-   }while( a < 20 );
- 
-   return 0;
+
+int main() {
+    int a = 10;
+
+start:                          // this is a label
+    if (a == 15) {
+        a = a + 1;
+        goto start;            // jump back to the label, skipping the printf below
+    }
+
+    printf("the value of a is: %d\n", a);
+    a++;
+
+    if (a < 20) {
+        goto start;            // jump back to repeat, like the do-while condition
+    }
+
+    return 0;
 }

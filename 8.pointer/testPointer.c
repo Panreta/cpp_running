@@ -48,3 +48,10 @@ main(int ac, char **av)
     f();
     return 0;
 }
+
+/*
+address:   0x1004  0x1005  0x1006  0x1007  0x1008  0x1009  0x100A  0x100B
+element:   [------- a[1] -------]  [------- a[2] -------]
+write:              [-------- *c = 499 (4 bytes) --------]
+                     ↑ overwrites last 3 bytes of a[1]     ↑ overwrites first byte of a[2]
+*/
