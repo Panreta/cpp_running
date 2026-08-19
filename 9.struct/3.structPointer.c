@@ -7,6 +7,8 @@ struct tag {
 } variable-list ;
 */
 
+// only changed a litter bit, for the input becomes pointer.
+
 
 #include <stdio.h>
 #include <string.h>

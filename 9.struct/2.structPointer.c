@@ -7,7 +7,6 @@ struct tag {
 } variable-list ;
 */
 
-
 #include <stdio.h>
 #include <string.h>
 
@@ -32,7 +31,7 @@ int main( )
    struct Books Book2;        /* 声明 Book2，类型为 Books */
  
    /* Book1 详述 */
-   strcpy( Book1.title, "C Programming");
+   strcpy( Book1.title, "C Programming");// put C Programming into Book1.title
    strcpy( Book1.author, "Nuha Ali");
    strcpy( Book1.subject, "C Programming Tutorial");
    Book1.book_id = 6495407;

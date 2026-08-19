@@ -11,7 +11,9 @@ typedef struct Books
  
 int main( )
 {
-   Book book;
+   Book book;// struct Books book;
+   Book book2;
+   Book* ptr = &book;
  
    strcpy( book.title, "C 教程");
    strcpy( book.author, "Runoob"); 

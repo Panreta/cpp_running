@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-// 定义常量宏
+// Define constant macro
 #define PI 3.1415926
 #define GREETING "Hello, World!"
 
-// 定义函数式宏（注意括号的使用）
+// Define function-like macro (note the use of parentheses)
 #define SQUARE(x) ((x) * (x))
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
@@ -22,7 +22,7 @@ int main() {
     printf("3和5中较大的数是: %d\n", MAX(3, 5));
     
     // 条件编译示例
-    #ifdef DEBUG
+    #ifdef DEBUG // if DEBUG is defined, then compile the following code
     printf("[调试信息] 程序运行到main函数\n");
     #endif
     

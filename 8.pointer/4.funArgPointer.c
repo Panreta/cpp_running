@@ -4,7 +4,7 @@
 #include <stdio.h>
  
 // print 10 random int
-void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))
+void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))// a pointer to store which function is calling
 {
     for (size_t i=0; i<arraySize; i++)
         array[i] = getNextValue();

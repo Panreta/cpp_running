@@ -15,5 +15,11 @@ int main(){
     pbit->a=0;    /* 用指针方式给位域 a 重新赋值，赋为 0 */
     pbit->b&=3;    /* 使用了复合的位运算符 "&="，相当于：pbit->b=pbit->b&3，位域 b 中原有值为 7，与 3 作按位与运算的结果为 3（111&011=011，十进制值为 3） */
     pbit->c|=16;    // still 15, for 16 is 10000, which is 5 bits, exceeding the 4 bits
+    /*
+      01111   (c = 15)
+    | 10000   (16)
+    -------
+    11111   (= 31) but c is only 4 bits, so it will be 1111, which is 15
+    */
     printf("%d,%d,%d\n",pbit->a,pbit->b,pbit->c);    /* 用指针方式输出了这三个域的值 */
 }

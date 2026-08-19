@@ -5,14 +5,15 @@
 int main()
 {
    char name[100];
-   char *description;
+   char* description;
  
    strcpy(name, "Zara Ali");
  
    /* 动态分配内存 */
    // description = (char *)malloc( 200 * sizeof(char) );// put storage in heap
    description = (char *)calloc( 200 ,sizeof(char) );
-   if( description == NULL )
+   if( description == NULL )//We can see from this example after allocate
+   //the storage, description is no longer a Null.
    {
       fprintf(stderr, "Error - unable to allocate required memory\n");
    }
