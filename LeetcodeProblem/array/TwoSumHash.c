@@ -8,10 +8,7 @@ typedef struct Node {
     struct Node* next; // for collision handling (chaining)
 } Node;
 
-int hashFunc(int key) {
-    unsigned int ukey = (unsigned int)key;  // handles negative numbers safely
-    return ukey % TABLE_SIZE;
-}
+t
 
 int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     Node* table[TABLE_SIZE] = {NULL};   // the "mapping" — array of linked lists
@@ -19,7 +16,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     for (int i = 0; i < numsSize; i++) {
         int num = nums[i];
 
-        // ---- if num in mapping: ----
+        // ---- if num in mapping: ----if has, not null, else null
         int idx = hashFunc(num);
         Node* curr = table[idx];
         while (curr != NULL) {

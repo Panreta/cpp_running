@@ -3,7 +3,7 @@
 
 // comparison function — qsort calls this to decide ordering
 int compare(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
+    return (*(int*)a - *(int*)b);// (int*): cast to int pointer; *(int*): dereference to compute val
 }
 
 int main() {

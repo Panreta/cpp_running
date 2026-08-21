@@ -21,7 +21,7 @@ MyCircularQueue* myCircularQueueCreate(int k) {
 
 bool myCircularQueueEnQueue(MyCircularQueue* obj, int value) {
     if(obj->size == obj->capa){return false;}//これは满员ですね。
-    int tail = (obj->head + obj->size) % obj->capa;//?
+    int tail = (obj->head + obj->size) % obj->capa;
     obj->data[tail] = value;
     obj->size ++;
     return true;
